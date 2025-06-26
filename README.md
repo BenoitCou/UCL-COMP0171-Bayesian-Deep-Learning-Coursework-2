@@ -8,7 +8,7 @@ This repository collects everything submitted for **Coursework 2** of the COMP01
 | `(Part 1) Uncertainty quantification.ipynb` | Notebook that implements **stochastic-gradient Langevin dynamics (SGLD)** for a Bayesian neural-network classifier on *two-moons* data, decomposes predictive variance into **epistemic / aleatoric** parts, and analyses calibration. |
 | `(Part 2) Variational auto-encoder.ipynb` | Notebook that builds and trains a **variational auto-encoder (VAE)** on MNIST, visualises reconstructions & random samples, and explores the learned latent manifold. |
 | `two_moons.pt` | Torch tensor with the two-moons dataset used in Part 1. |
-| `requirements.txt`* | Python dependencies |
+| `requirements.txt` | Python dependencies |
 
 ---
 
