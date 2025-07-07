@@ -33,21 +33,21 @@ jupyter notebook "(Part 2) Variational auto-encoder.ipynb"
 
 **Part 1 – SGLD & Bayesian uncertainty**
 
-- **Bayesian neural network** — two-layer ReLU MLP (`input = 2 → 32 → 32 → 1`) with a standard normal prior on all weights.  
+- **Bayesian neural network** — two-layer ReLU MLP (`input = 2 → 100 → 10 → 1`) with a standard normal prior on all weights.  
 - **Likelihood / prior** — implemented Bernoulli log-likelihood and isotropic $\mathcal N(0,I)$ prior; mini-batch log-joint with automatic batching for speed.  
 - **SGLD sampler** — custom PyTorch loop with Robbins–Monro step-size schedule and *cyclic learning-rate* trick; drew 15 000 samples after burn-in.  
 - **Variance decomposition** — estimated total, epistemic and aleatoric variances on a grid; produced heat-maps showing epistemic spikes outside the training support.  
-- **Calibration** — generated reliability diagrams and expected-calibration-error (ECE); compared MAP vs Bayesian predictions.  
-- **Free-response** — discussed Laplace vs SGLD for decision-boundary complexity; examiner notes disagreement here (“Laplace won’t outperform SGLD even with few samples”).  
+- **Calibration** — generated reliability diagrams and expected-calibration-error (ECE).  
+- **Free-response** — discussed Laplace vs SGLD for decision-boundary complexity.  
 
 **Part 2 – Variational auto-encoder**
 
-- **Architecture** — convolutional encoder → $\mathbb R^{2d}$ for $(\boldsymbol\mu,\log\boldsymbol\sigma)$ with $d = 20$; deconvolutional decoder mirrors the encoder.  
+- **Architecture** — convolutional encoder → $\mathbb R^{2d}$ for $(\boldsymbol\mu,\log\boldsymbol\sigma)$ with $d = 10$; deconvolutional decoder mirrors the encoder.  
 - **Objective** — maximised the ELBO with a standard normal latent prior; used *reparameterisation trick* and Adam optimiser.  
 - **Results** —  
   - *Reconstructions* faithfully reproduce digit strokes after 25 epochs.  
   - *Samples* from the prior yield coherent digits with minor blurring.  
-  - *Latent space* visualised with a 2-D t-SNE projection shows well-separated digit clusters.  
+  - *Latent space* visualised with a 2-D projection shows well-separated digit clusters.  
 ---
 
 ## Marks obtained
