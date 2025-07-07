@@ -16,7 +16,7 @@ This repository collects everything submitted for **Coursework 2** of the COMP01
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/<YourUser>/UCL-COMP0171-Bayesian-Deep-Learning-Coursework-2
+git clone https://github.com/BenoitCou/UCL-COMP0171-Bayesian-Deep-Learning-Coursework-2
 cd UCL-COMP0171-Bayesian-Deep-Learning-Coursework-2
 
 # 2. Install Python dependencies
