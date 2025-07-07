@@ -19,13 +19,10 @@ This repository collects everything submitted for **Coursework 2** of the COMP01
 git clone https://github.com/<YourUser>/UCL-COMP0171-Bayesian-Deep-Learning-Coursework-2
 cd UCL-COMP0171-Bayesian-Deep-Learning-Coursework-2
 
-# 2. (Recommended) set up an isolated environment
-python -m venv .venv
-
-# 3. Install Python dependencies
+# 2. Install Python dependencies
 pip install -r requirements.txt
 
-# 4. Launch the notebooks
+# 3. Launch the notebooks
 jupyter notebook "(Part 1) Uncertainty quantification.ipynb"
 jupyter notebook "(Part 2) Variational auto-encoder.ipynb"
 ```
